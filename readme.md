@@ -1,16 +1,23 @@
- In our project Open Computer Vision used to detect the face in our face recognition technique. Open CV is act like eye of the computer or any machines.
- In fatigue detection case, eye position are very vital and needed to be detected precisely in order for the script to work on properly to determine the Employee Fatigue.
- After detecting the face of the employee, based on facial landmarks, the calculation of the fatigue level was carried out. Eye Aspect Ratio calculate and compared to Threshold Value. EAR greater than threshold not alert the employee. Else it alert the employee by using alarm sound.
-DIGITAL IMAGE PROCESSING
-   The identification of objects in an image. This process would probably start with image processing techniques such as noise removal, followed by (low-level) feature extraction to locate lines, regions and possibly areas with certain textures.
-   The clever bit is to interpret collections of these shapes as single objects, e.g. cars on a road, boxes on a conveyor belt or cancerous cells on a microscope slide. One reason this is an AI problem is that an object can appear very different when viewed from different angles or under different lighting. 
-    Another problem is deciding what features belong to what object and which are background or shadows etc. The human visual system performs these tasks mostly unconsciously but a computer requires skillful programming and lots of processing power to approach human performance. Manipulating data in the form of an image through several possible techniques. An image is usually interpreted as a two-dimensional array of brightness values, and is most familiarly represented by such patterns as those of a photographic print, slide, television screen, or movie screen. An image can be processed optically or digitally with a computer.
-OPEN CV                        
-   Open Computer Vision is shortly denoted as Open CV. Officially launched in 1999 the OpenCV project was initially an Intel Research initiative to advance CPU-intensive applications, part of a series of projects including real-time ray tracing and 3D display walls. The main contributors to the project included a number of optimization experts in Intel Russia, as well as Intel's Performance Library Team.
-   OpenCV is written in C++ and its primary interface is in C++, but it still retains a less comprehensive though extensive older C interface. All of the new developments and algorithms appear in the C++ interface. There are bindings in Python, Java and MATLAB. The API for these interfaces can be found in the online documentation. Wrappers in several programming languages have been developed to encourage adoption by a wider audience.
-   In our project Open Computer Vision used to detect the face in our face recognition technique. Open CV is act like eye of the computer or any machines.
-FACIAL LANDMARKS:
-   The Dlib library contains a free a pre-trained facial detector which is used to locate a total amount of 68 Co-ordinates. Based on the 68 Co-Ordinates, a functional facial structure are mapped and constructed. Applying facial landmarks to the script enable the live camera to predict and determine the position of left and right eye, eye brows, nose, mouth, as well as his/her jaw based on the shape of their head. In fatigue detection case, eye position are very vital and needed to be detected precisely in order for the script to work on properly to determine the Employee Fatigue.
-EAR (Eye Aspect Ratio):
-   After detecting the face of the employee, based on facial landmarks, the calculation of the fatigue level was carried out. Eye Aspect Ratio calculate and compared to Threshold Value. EAR greater than threshold not alert the employee. Else it alert the employee by using alarm sound.
-     
+Employee Fatigue Detection using OpenCV
+Overview
+This project utilizes OpenCV, an open-source computer vision library, to implement a fatigue detection system based on facial landmarks. The aim is to accurately determine an employee's fatigue level by analyzing the position of their eyes.
+
+Objectives
+Face Detection:
+
+OpenCV is employed to detect the face of an employee using its pre-trained facial detector.
+Facial Landmarks:
+
+Utilizing the Dlib library, 68 facial landmarks are identified to map and construct a functional facial structure.
+Eye Position Detection:
+
+The system focuses on precise eye position detection to facilitate accurate fatigue level calculations.
+Eye Aspect Ratio (EAR):
+
+The EAR is calculated based on facial landmarks to assess fatigue levels.
+If the EAR is greater than a predefined threshold, no alert is triggered; otherwise, an alarm sound alerts the employee.
+Digital Image Processing
+The project involves digital image processing techniques for noise removal, low-level feature extraction, and interpreting object shapes within an image.
+
+OpenCV (Open Computer Vision)
+OpenCV, launched in 1999 by Intel, is a C++ library widely used for computer vision tasks. The project has interfaces in C++, Python, Java, and MATLAB.
